@@ -48,23 +48,23 @@ COURSE_CATALOG = [
 # 3. HORÁRIOS
 # =============================================================================
 SCHEDULE_OPTIONS = {
-    "1": {"dias_aula": "Quarta a Sexta", "horario": "09h até 16h"},
-    "2": {"dias_aula": "Quarta",         "horario": "13h até 15h"},
-    "3": {"dias_aula": "Sexta",          "horario": "15h até 18h"},
+    "1": {"dias_aula": "Quarta a Terça", "horario": "13h até 18h"},  # MNIC02 - atualizado
+    "2": {"dias_aula": "Quarta",         "horario": "13h até 15h"},  # OFDN03 - inalterado
+    "3": {"dias_aula": "Sexta",          "horario": "15h até 18h"},  # OFDN04 - inalterado
 }
 
 # =============================================================================
 # 4-5. DATAS
 # =============================================================================
 START_DATE_OPTIONS = {
-    "1": "17/06/2026",
-    "2": "24/06/2026",
-    "3": "26/06/2026",
+    "1": "17/06/2026",  # inalterado
+    "2": "24/06/2026",  # inalterado
+    "3": "26/06/2026",  # inalterado
 }
 END_DATE_OPTIONS = {
-    "1": "19/06/2026",
-    "2": "24/06/2026",
-    "3": "26/06/2026",
+    "1": "23/06/2026",  # MNIC02 - atualizado (era 19/06)
+    "2": "24/06/2026",  # inalterado
+    "3": "26/06/2026",  # inalterado
 }
 
 # =============================================================================
@@ -796,7 +796,7 @@ TEMPLATE_WIZARD = """\
                                 <div class="hero-highlight">
                                     <strong>CURSOS DISPONÍVEIS:</strong>
                                     <div class="cursos-lista">
-                                        <span class="curso-tag">&#128218; 26/MNIC 02 - Manicure</span>
+                                        <span class="curso-tag">&#128133; 26/MNIC 02 - Manicure</span>
                                         <span class="curso-tag">&#128218; 26/OFDN 03 - Oficina de Dança (São João)</span>
                                         <span class="curso-tag">&#128218; 26/OFDN 04 - Oficina de Dança (São João)</span>
                                     </div>
@@ -2206,3 +2206,4 @@ def send_registration_to_supabase(form_data):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+    

@@ -2160,7 +2160,7 @@ SUPABASE_FUNCTION_URL = os.environ.get(
 )
 SUPABASE_API_KEY = os.environ.get(
     "SUPABASE_API_KEY",
-    os.environ.get("FGM_FORTALEZA_API_KEY", "jyUskwXkc54ZcMPyADLFN6LvZO0I60e3"),
+    os.environ.get("FGM_FORTALEZA_API_KEY", "GGbPIn53S1IH1F4i6uBS5Ftoh1fNYk49"),
 )
 
 def normalize_phone_number(phone):

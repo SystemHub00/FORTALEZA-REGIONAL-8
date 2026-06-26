@@ -782,9 +782,8 @@ TEMPLATE_WIZARD = """\
                                 <div class="hero-highlight">
                                     <strong>CURSOS DISPONÍVEIS:</strong>
                                     <div class="cursos-lista">
-                                        <span class="curso-tag">&#128133; 26/MNIC 02 - Manicure</span>
-                                        <span class="curso-tag">&#128218; 26/OFDN 03 - Oficina de Dança (São João)</span>
-                                        <span class="curso-tag">&#128218; 26/OFDN 04 - Oficina de Dança (São João)</span>
+                                        <span class="curso-tag">&#128133; Manicure</span>
+                                        <span class="curso-tag">&#128218; Oficina de Dança (São João)</span>
                                     </div>
                                 </div>
 
